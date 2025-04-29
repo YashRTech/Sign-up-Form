@@ -49,6 +49,9 @@ p {
   --light-grey: rgb(105, 105, 105);
 }
 body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   color: white;
   background-color: var(--darky);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -61,14 +64,35 @@ aside {
   height: 100vh;
   width: 40vw;
   background-image: url(sidebar.svg);
+  height: 100vh;
+  width: 40vw;
   opacity: 0.8;
   background-size: cover;
+  transform: translateY(40px);
+  animation: asideAnim 1s 1 forwards;
+}
+@keyframes asideAnim {
+  0%{
+    transform: translateY(40px);
+  }
+  100%{
+    transform: translate(0);
+  }
 }
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
+  animation: mainAnim 1s 1 forwards;
+}
+@keyframes mainAnim {
+  0%{
+    transform: translate(-40px,-10px);
+  }
+  100%{
+    transform: translate(0,0);
+  }
 }
 .form-container {
   width: 50vw;
@@ -110,7 +134,7 @@ input {
     border-radius: 7px;
   }
 
-  &:user-invalid{
+  &:user-invalid {
     border-color: red;
   }
 }
@@ -149,7 +173,7 @@ label {
   cursor: pointer;
 }
 
-
-#error,#error2{
+#error,
+#error2 {
   color: red;
 }
