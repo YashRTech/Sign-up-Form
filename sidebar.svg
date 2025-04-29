@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Enhanced background gradients -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2463" />
+      <stop offset="50%" stop-color="#3E92CC" />
+      <stop offset="100%" stop-color="#2CA58D" />
+    </linearGradient>
+    
+    <radialGradient id="glowGradient" cx="50%" cy="30%" r="70%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Particle effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="400" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Glow effect overlay -->
+  <rect width="400" height="600" fill="url(#glowGradient)" />
+  
+  <!-- Abstract geometric shapes -->
+  <path d="M0,150 L400,0 L400,250 L0,400 Z" fill="#FFFFFF" fill-opacity="0.03" />
+  <path d="M0,450 L400,300 L400,550 L0,600 Z" fill="#FFFFFF" fill-opacity="0.05" />
+  
+  <!-- Flowing curves -->
+  <path d="M-50,200 C50,150 100,250 200,200 S350,250 450,150" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="40" fill="none" />
+  <path d="M-50,400 C50,350 100,450 200,400 S350,450 450,350" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="30" fill="none" />
+  
+  <!-- Decorative circles -->
+  <circle cx="50" cy="150" r="100" fill="#FFFFFF" fill-opacity="0.05" />
+  <circle cx="350" cy="450" r="120" fill="#FFFFFF" fill-opacity="0.03" />
+  <circle cx="200" cy="300" r="150" fill="#FFFFFF" fill-opacity="0.02" />
+  
+  <!-- Central focal point -->
+  <circle cx="200" cy="200" r="80" fill="url(#glowGradient)" />
+  
+  <!-- Sparkling particles -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="100" r="2" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="150" cy="150" r="1.5" fill="#FFFFFF" fill-opacity="0.7" />
+    <circle cx="250" cy="120" r="2" fill="#FFFFFF" fill-opacity="0.9" />
+    <circle cx="300" cy="200" r="1" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="80" cy="250" r="1.5" fill="#FFFFFF" fill-opacity="0.7" />
+    <circle cx="350" cy="300" r="2" fill="#FFFFFF" fill-opacity="0.9" />
+    <circle cx="200" cy="350" r="1" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="120" cy="400" r="1.5" fill="#FFFFFF" fill-opacity="0.7" />
+    <circle cx="280" cy="450" r="2" fill="#FFFFFF" fill-opacity="0.9" />
+    <circle cx="150" cy="500" r="1" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="350" cy="550" r="1.5" fill="#FFFFFF" fill-opacity="0.7" />
+  </g>
+  
+  <!-- More decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="#FFFFFF" fill-opacity="0.05" />
+  <circle cx="350" cy="550" r="25" fill="#FFFFFF" fill-opacity="0.05" />
+  
+  <!-- Main headline -->
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Join Today</text>
+  
+  <!-- Secondary text -->
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" letter-spacing="1">START YOUR JOURNEY</text>
+  
+  <!-- Feature highlights with icons -->
+  <g transform="translate(80, 260)">
+    <!-- Feature 1 -->
+    <circle cx="20" cy="20" r="15" fill="#FFFFFF" fill-opacity="0.9" />
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="#0A2463" text-anchor="middle" font-weight="bold">1</text>
+    <text x="55" y="25" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Premium Access</text>
+    
+    <!-- Feature 2 -->
+    <circle cx="20" cy="70" r="15" fill="#FFFFFF" fill-opacity="0.9" />
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="12" fill="#0A2463" text-anchor="middle" font-weight="bold">2</text>
+    <text x="55" y="75" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Expert Support</text>
+    
+    <!-- Feature 3 -->
+    <circle cx="20" cy="120" r="15" fill="#FFFFFF" fill-opacity="0.9" />
+    <text x="20" y="125" font-family="Arial, sans-serif" font-size="12" fill="#0A2463" text-anchor="middle" font-weight="bold">3</text>
+    <text x="55" y="125" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Exclusive Content</text>
+  </g>
+  
+  <!-- Bottom tagline with enhanced styling -->
+  <rect x="50" y="480" width="300" height="60" rx="30" ry="30" fill="#FFFFFF" fill-opacity="0.15" />
+  <text x="200" y="520" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Join 10,000+ members</text>
+</svg>

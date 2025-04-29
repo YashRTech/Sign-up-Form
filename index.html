@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <meta name="description" content="Create your account with our secure and stylish sign-up form." />
+    <meta name="author" content="Yash Tiwari" />
+    <meta name="keywords" content="sign up, form, html, css, registration, create account" />
+    <meta name="theme-color" content="#1d2b3a" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <section class="container">
+        <aside>
+            <!-- here is image section -->
+        </aside>
+        <main>
+            <form action="" method="post" autocomplete="off" id="myForm">
+                <div class="form-container">
+                    <h1 class="form-header">Get Started</h1>
+                    <div class="input-group">
+                        <input type="text" required placeholder=" " id="firstName" name="firstName">
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" required placeholder=" " id="lastName" name="lastName">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required placeholder=" " pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" id="email"
+                            name="email">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" required placeholder=" " minlength="10" maxlength="10" pattern="[0-9]{10}"
+                            id="phone" name="phoneNo">
+                        <label for="phone">Phone NO.</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required placeholder=" " id="pass" name="password" pattern="^\S+$"
+                            title="Password must not contain spaces">
+                        <label for="pass">Password</label>
+                        <p id="error"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required id="confPass" name="confirmPassword" placeholder=" "
+                            pattern="^\S+$" title="Password must not contain spaces">
+                        <label for="confPass">Confirm Password</label>
+                        <p id="error2"></p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="create-btn">Create Account</button>
+                        <p class="btn-text">Already have an account? <a href="#"><button type="button"
+                                    class="login-btn">Log in</button></a></p>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </section>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
