@@ -21,26 +21,30 @@
             <div></div>
         </aside>
         <main>
-            <form action="" method="post" autocomplete="off" id="myForm">
+            <form action="" method="post" autocomplete="off" id="myForm" novalidate>
                 <div class="form-container">
                     <h1 class="form-header">Get Started</h1>
                     <div class="input-group">
-                        <input type="text" required placeholder=" " id="firstName" name="firstName">
+                        <input type="text" required placeholder=" " id="firstName" name="firstName" maxlength="7" minlength="3">
                         <label for="firstName">First Name</label>
+                        <p class="fName-error all-error"></p>
                     </div>
                     <div class="input-group">
-                        <input type="text" required placeholder=" " id="lastName" name="lastName">
+                        <input type="text" required placeholder=" " id="lastName" name="lastName" maxlength="10" minlength="4">
                         <label for="lastName">Last Name</label>
+                        <p class="lName-error all-error"></p>
                     </div>
                     <div class="input-group">
                         <input type="email" required placeholder=" " pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" id="email"
-                            name="email">
+                            name="email" title="Enter an email like yash@gmail.com">
                         <label for="email">E-mail</label>
+                        <p class="email-error all-error"></p>
                     </div>
                     <div class="input-group">
                         <input type="tel" required placeholder=" " minlength="10" maxlength="10" pattern="[0-9]{10}"
-                            id="phone" name="phoneNo">
+                            id="phone" name="phoneNo" title="Enter 10 digit mobile number">
                         <label for="phone">Phone NO.</label>
+                        <p class="phNo-error all-error"></p>
                     </div>
                     <div class="input-group">
                         <input type="password" required placeholder=" " id="pass" name="password" pattern="^\S+$"

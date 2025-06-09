@@ -137,6 +137,9 @@ input {
   &:user-invalid {
     border-color: red;
   }
+  &:user-valid{
+    border-color: green;
+  }
 }
 label {
   text-transform: uppercase;
@@ -176,4 +179,10 @@ label {
 #error,
 #error2 {
   color: red;
+}
+
+
+.all-error{
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
 }
