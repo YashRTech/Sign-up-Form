@@ -1,11 +1,3 @@
-# This is just a Static Sign-up Form!
-
-** You can use this "input:not(:placeholder-shown) + label" for moving label whenever needed check code and form to know what I mean to. **
-
-# Live Preview
-
-[check it now](https://exceptional-sign-up-form.netlify.app/)
-
 # 📄 Sign-Up Form – HTML, CSS & JavaScript
 
 A modern, stylish and fully validated sign-up form built using HTML5, CSS3, and Vanilla JavaScript.
@@ -48,3 +40,8 @@ Built with custom UI animations and real-time form validation using the Constrai
     - Prevents default submission
     - Validates fields live as user types
     - Checks passwords match before final submission
+
+
+# Little trick used
+
+** You can use this "input:not(:placeholder-shown) + label" for moving label whenever needed check code and form to know what I mean to. **
